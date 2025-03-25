@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-use crate::guide_assets::CSS;
+use crate::{guide_assets::CSS, guide_fetching};
 
 static SONG: GlobalSignal<String> = Signal::global(|| "Drift Away".to_string());
 
@@ -18,7 +18,7 @@ pub fn App() -> Element {
         document::Stylesheet { href: CSS }
         Title {}
         Player {}
-        DogView {}
+        guide_fetching::DogView {}
     }
 }
 
