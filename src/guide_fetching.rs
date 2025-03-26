@@ -1,6 +1,5 @@
+use crate::guide_databases;
 use dioxus::prelude::*;
-
-use crate::guide_backend::save_dog;
 
 #[derive(serde::Deserialize)]
 struct DogApi {
@@ -28,7 +27,7 @@ pub fn DogView() -> Element {
             button { onclick: move |_| async move {
                 let current = img_src.cloned().unwrap();
                 img_src.restart();
-                _ = save_dog(current).await;
+                _ = guide_databases::save_dog(current).await;
             }, id: "save", "save!" }
         }
     }
