@@ -17,7 +17,7 @@ pub fn App() -> Element {
     rsx! {
         document::Stylesheet { href: CSS }
         Title {}
-        Player {}
+        // Player {}
         guide_fetching::DogView {}
     }
 }
