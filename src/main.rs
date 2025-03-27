@@ -1,6 +1,7 @@
 use dioxus::prelude::*;
 use hot_dog::{
     guide_component::{DogApp, Header, HelloDiv},
+    guide_router::app,
     guide_state::App,
 };
 
@@ -9,5 +10,5 @@ const MAIN_CSS: Asset = asset!("/assets/main.css");
 const HEADER_SVG: Asset = asset!("/assets/header.svg");
 
 fn main() {
-    dioxus::launch(App);
+    dioxus::launch(app);
 }
