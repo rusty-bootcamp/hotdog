@@ -11,6 +11,11 @@ pub fn NavBar() -> Element {
                 to: Route::DogView,
                 h1 {"HotDog!"}
             }
+            Link {
+                to: Route::Favorites,
+                id: "heart",
+                "♥️"
+            }
         }
         Outlet::<Route> {}
     }
