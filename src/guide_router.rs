@@ -1,4 +1,5 @@
-use crate::components::{DogView, Favorites, NavBar, PageNotFound};
+use crate::components::{Favorites, NavBar, PageNotFound};
+use crate::guide_fetching::DogView;
 use dioxus::prelude::*;
 
 #[derive(Routable, Clone, PartialEq)]
