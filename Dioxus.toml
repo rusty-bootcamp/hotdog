@@ -1,4 +1,10 @@
 [application]
+name = "docsite"
+
+[bundle]
+identifier = "com.dioxuslabs"
+publisher = "DioxusLabs"
+icon = ["assets/icon.png"]
 
 [web.app]
 
